@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px black;
+  background-color: white;
+}
+
+.fill {
+  background-image: url('trophy.jpg');
+  background-size: cover;
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+}
+.hold {
+  border: solid 5px #ccc;
+}
+.hover {
+  background-color: #333;
+  border: white dashed;
+}
